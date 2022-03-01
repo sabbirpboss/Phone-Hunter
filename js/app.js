@@ -33,6 +33,7 @@ const displaySearchResult = mobiles => {
                 <div class="card-body">
                     <h5 class="card-title text-center">${mobile.phone_name}</h5>
                     <h6 class="card-title text-center">${mobile.brand}</h6>
+                    <a href="#" class="btn btn-success w-100">Explore</a>
                 </div>
             </div>
         `;
