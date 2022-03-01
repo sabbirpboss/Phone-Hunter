@@ -59,18 +59,20 @@ const displayMobileDetail = mobile => {
     const div = document.createElement('div');
     div.classList.add('card');
     div.innerHTML = `
-    <div class="row g-0">
+    <div class="row g-0 single-card-style"> 
+        <h5 class="card-title mobile-name-custom-bg">${mobile.name}</h5>
         <div class="col-md-4">
-            <h5 class="card-title bg-info">${mobile.name}</h5>
-            <img src="${mobile.image}" class="img-fluid rounded-start" alt="...">
+            <img src="${mobile.image}" class="img-fluid single-item-image rounded-start" alt="...">
         </div>
         <div class="col-md-8">
             <div class="card-body">
                 <p class="card-text">${mobile.releaseDate}</p>
-                <p class="card-text text-primary">${mobile.mainFeatures.storage}</p>
-                <p class="card-text text-primary">${mobile.slug}</p>
-                <p class="card-text text-warning">${mobile.brand}</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <p class="card-text">${mobile.mainFeatures.storage}</p>
+                <p class="card-text">${mobile.mainFeatures.chipSet}</p>
+                <p class="card-text">${mobile.mainFeatures.memory}</p>
+                <p class="card-text text-white">Others: ${mobile.others.WLAN}, ${mobile.others.Bluetooth}, ${mobile.others.GPS}, ${mobile.others.USB}</p>
+                <p class="card-text text-dark text-bold text-uppercase">${mobile.brand}</p>
+                <p class="card-text text-primary"><small class="text-muted">${mobile.slug}</small></p>
             </div>
         </div>
     </div>

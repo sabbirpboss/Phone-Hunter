@@ -18,18 +18,18 @@ body {
 .container {
   color: black;
 }
-.top-text-custom{
-    color: #2B6C60;
-    text-transform: uppercase;
-    margin-top: 20px;
+.top-text-custom {
+  color: #2b6c60;
+  text-transform: uppercase;
+  margin-top: 20px;
 }
-#search-field{
-    background-color: white;
-    color: black;
+#search-field {
+  background-color: white;
+  color: black;
 }
-#button-search{
-    color: black;
-    border: 1px solid #d3d3d3;
+#button-search {
+  color: black;
+  border: 1px solid #d3d3d3;
 }
 #card-custom-bg {
   background: #abbaab; /* fallback for old browsers */
@@ -53,11 +53,11 @@ body {
   margin-top: 15px;
   border-radius: 10px;
 }
-.card-body-color{
-    color: black;
+.card-body-color {
+  color: black;
 }
-.custom-brand-color{
-    color: #4b4848;
+.custom-brand-color {
+  color: #4b4848;
 }
 #explore-btn-custom-color {
   background-color: #fff;
@@ -67,6 +67,47 @@ body {
   border-radius: 20px;
 }
 #explore-btn-custom-color:hover {
-    background-color: #ACBBAC;
-    color: rgba(71, 67, 67, 0.966);
+  background-color: #acbbac;
+  color: rgba(71, 67, 67, 0.966);
+}
+
+/* single item style */
+#mobile-details {
+  margin-bottom: 30px;
+}
+.mobile-name-custom-bg {
+  background: #ed4264; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffedbc,
+    #ed4264
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffedbc,
+    #ed4264
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  text-shadow: #222 2px 1px 2px;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.single-card-style {
+  background: #ed4264; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #ffedbc,
+    #ed4264
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #ffedbc,
+    #ed4264
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.single-item-image{
+    margin: 5px 10px;
+    border-radius: 10px;
 }
