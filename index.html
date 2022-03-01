@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mobile Finder</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- Customize CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- PROJECT CODE STARTED -->
-    <h2>Find Your Favourite One</h2>
+    <h2 class="text-success text-center">Find Your Favourite One</h2>
+
+    <!-- phone search area -->
+    <div class="input-group mb-3 w-50 mx-auto">
+      <input
+        id="search-field"
+        type="text"
+        class="form-control"
+        placeholder="Find Your Mobile"
+        aria-label="Recipient's username"
+        aria-describedby="button-addon2"
+      />
+      <button onclick="searchMobile()"
+        class="btn btn-outline-secondary"
+        type="button"
+        id="button-search"
+      >
+        Find
+      </button>
+    </div>
     <!-- PROJECT CODE ENDED -->
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Customize JS -->
     <script src="js/app.js"></script>
-</body>
+  </body>
 </html>
