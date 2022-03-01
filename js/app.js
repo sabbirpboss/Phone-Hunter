@@ -23,7 +23,7 @@ const searchMobile = async () => {
 
 //display search result
 const displaySearchResult = (mobiles) => {
-  // console.log(mobiles);
+  console.log(mobiles);
   const searchResult = document.getElementById("search-result");
   //clear all search result data
   searchResult.textContent = "";
@@ -57,7 +57,7 @@ const loadMobileDetail = async (id) => {
 };
 
 const displayMobileDetail = (mobile) => {
-  console.log(mobile);
+  // console.log(mobile);
   const mobileDetails = document.getElementById("mobile-details");
   //clear all result
   mobileDetails.textContent = "";
@@ -71,7 +71,7 @@ const displayMobileDetail = (mobile) => {
         </div>
         <div class="col-md-8">
             <div class="card-body">
-                <p class="card-text">${mobile.releaseDate}</p>
+                <p class="card-text">${mobile.releaseDate ? mobile.releaseDate:'comming soon'}</p>
                 <p class="card-text">${mobile.mainFeatures.displaySize}</p>
                 <p class="card-text">${mobile.mainFeatures.storage}</p>
                 <p class="card-text">${mobile.mainFeatures.chipSet}</p>
@@ -86,3 +86,12 @@ const displayMobileDetail = (mobile) => {
     `;
   mobileDetails.appendChild(div);
 };
+
+
+
+
+
+  document.getElementById('button-search').addEventListener('click', function (){
+    const mobileDetails = document.getElementById("mobile-details");
+    mobileDetails.textContent = '';
+  })
