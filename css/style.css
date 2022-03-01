@@ -1,0 +1,72 @@
+body {
+  background: #ada996; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container {
+  color: black;
+}
+.top-text-custom{
+    color: #2B6C60;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+#search-field{
+    background-color: white;
+    color: black;
+}
+#button-search{
+    color: black;
+    border: 1px solid #d3d3d3;
+}
+#card-custom-bg {
+  background: #abbaab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #abbaab
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #abbaab
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+#search-result-image {
+  width: 150px;
+  height: 200px;
+  margin: 0px auto;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.card-body-color{
+    color: black;
+}
+.custom-brand-color{
+    color: #4b4848;
+}
+#explore-btn-custom-color {
+  background-color: #fff;
+  color: #222;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+#explore-btn-custom-color:hover {
+    background-color: #ACBBAC;
+    color: rgba(71, 67, 67, 0.966);
+}
