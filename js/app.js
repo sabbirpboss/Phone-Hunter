@@ -77,7 +77,7 @@ const displayMobileDetail = (mobile) => {
                 <p class="card-text">${mobile.mainFeatures.chipSet}</p>
                 <p class="card-text">${mobile.mainFeatures.memory}</p>
                 <p class="card-text text-white">Sensors: ${mobile.mainFeatures.sensors[0]}, ${mobile.mainFeatures.sensors[1]}, ${mobile.mainFeatures.sensors[2]}, ${mobile.mainFeatures.sensors[3]}, ${mobile.mainFeatures.sensors[4]}, ${mobile.mainFeatures.sensors[5]}, ${mobile.mainFeatures.sensors[6]}.</p>
-                <p class="card-text text-white">Others: Bluetooth: ${mobile.others.Bluetooth}, GPS: ${mobile.others.GPS}, NFC:${mobile.others.NFC}, Radio: ${mobile.others.Radio}, USB: ${mobile.others.USB}, WLAN: ${mobile.others.WLAN}.</p>
+                <p class="card-text text-white">Others: Bluetooth: ${mobile.others ? mobile.others.Bluetooth:'Not Yet Found'}, GPS: ${mobile.others ? mobile.others.GPS:'Not Yet Found'}, NFC:${mobile.others ? mobile.others.NFC: 'Not Yet Found'}, Radio: ${mobile.others ? mobile.others.Radio: 'Not Yet Found'}, USB: ${mobile.others ? mobile.others.USB: 'Not Yet Found'}, WLAN: ${mobile.others ? mobile.others.WLAN: 'Not Yet Found'}.</p>
                 <p class="card-text text-dark fw-bold text-uppercase">${mobile.brand}</p>
                 <p class="card-text text-primary"><small class="text-muted">Tags: ${mobile.slug}</small></p>
             </div>
