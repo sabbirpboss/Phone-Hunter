@@ -1,3 +1,5 @@
+document.getElementById('error').style.display = "none";
+
 const searchMobile = async () => {
   // call id and get input value
   const searchField = document.getElementById("search-field");
@@ -7,9 +9,10 @@ const searchMobile = async () => {
   searchField.value = "";
 
   //error handling
-  if (searchText == "") {
-    alert("please write something in search field");
-  } else {
+  // if (searchText == "") {
+  //   alert("please write something in search field");
+  // } 
+  // else {
     //set the url with https and make it *dynamic
     //and load the url by async await
     const url = `https://openapi.programming-hero.com/api/phones?search=${searchText}`;
@@ -18,17 +21,27 @@ const searchMobile = async () => {
     const res = await fetch(url);
     const data = await res.json();
     displaySearchResult(data.data);
-  }
+  // }
 };
 
 //display search result
 const displaySearchResult = (mobiles) => {
   console.log(mobiles);
+  if (mobiles.length == 0) {
+    document.getElementById('error').style.display = "block";
+    document.getElementById('search-result').innerHTML = '';
+    document.getElementById('mobile-details').innerHTML = '';
+  }
+  else{
+    const something = mobiles.slice(0, 20);
+  
   const searchResult = document.getElementById("search-result");
+  document.getElementById('error').style.display ='none';
+  document.getElementById('search-field').value = '';
   //clear all search result data
   searchResult.textContent = "";
-
-  mobiles.forEach((mobile) => {
+  
+      something.forEach((mobile) => {
     // console.log(mobile);
     const div = document.createElement("div");
     div.classList.add("col");
@@ -44,6 +57,9 @@ const displaySearchResult = (mobiles) => {
         `;
     searchResult.appendChild(div);
   });
+
+};
+
 };
 
 //get mobile detail by mobile id
